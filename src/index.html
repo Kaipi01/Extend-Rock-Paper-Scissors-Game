@@ -9,51 +9,117 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <script defer src="./js/main.js"></script>
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">
-        <span class="header__titleElement">ROCK</span>
-        <span class="header__titleElement">PAPER</span>
-        <span class="header__titleElement">SCISSORS</span>
-        <span class="header__titleElement">LIZARD</span>
-        <span class="header__titleElement">SPOCK</span>
-      </h1>
-      <section class="scoreBoard">
-        <h2 class="scoreBoard__Title">SCORE</h2>
-        <p class="scoreBoard__Value">12</p>
+      <img class="header__logo" src="./images/logo-bonus.svg" alt="Game logo" />
+      <h1 class="header__title">ROCK, PAPER, SCISSORS, LIZARD, SPOCK GAME</h1>
+      <section class="score">
+        <h2 class="score__title">SCORE</h2>
+        <p class="score__value">12</p>
       </section>
     </header>
     <main class="game">
-      <div>
-        <button>SCISSORS</button>
-        <button>SPOCK</button>
-        <button>LIZARD</button>
-        <button>ROCK</button>
-        <button>PAPER</button>
-      </div>
-      <div>
-        <h3>YOU PICKED</h3>
-        <img src="" alt="">
-        <h3>THE HOUSE PICKED</h3>
-        <img src="" alt="">
-        <div>
-          <p>YOU LOSE</p>
-          <button>PLAY AGAIN</button>
-        </div>
-      </div>
-      <button>RULES</button>
-      <div>modal</div>
+      <article class="game__start">
+        <h2 class="game__stepTitle">CHOOSE YOUR WEAPON</h2>
+        <button class="game__startBtn">
+          <img
+            class="game__startBtnImg"
+            src="./images/icon-scissors.svg"
+            alt="scissors symbol"
+          />
+        </button>
+        <button class="game__startBtn">
+          <img
+            class="game__startBtnImg"
+            src="./images/icon-spock.svg"
+            alt="spock symbol"
+          />
+        </button>
+        <button class="game__startBtn">
+          <img
+            class="game__startBtnImg"
+            src="./images/icon-lizard.svg"
+            alt="lizard symbol"
+          />
+        </button>
+        <button class="game__startBtn">
+          <img
+            class="game__startBtnImg"
+            src="./images/icon-rock.svg"
+            alt="rock symbol"
+          />
+        </button>
+        <button class="game__startBtn">
+          <img
+            class="game__startBtnImg"
+            src="./images/icon-paper.svg"
+            alt="paper symbol"
+          />
+        </button>
+      </article>
+      <article class="game__check game__check--hide">
+        <h2 class="game__stepTitle">LET'S SEE WHO WON</h2>
+        <h3 class="game__checkPick game__checkYouPick">YOU PICKED</h3>
+        <img
+          class="game__checkPickImg game__checkYouPickImg"
+          src="./images/icon-rock.svg"
+          alt="rock symbol"
+        />
+        <article class="game__final game__final--hide">
+          <h2 class="game__finalResult">YOU LOSE</h2>
+          <button class="game__finalBtn">PLAY AGAIN</button>
+        </article>
+        <h3 class="game__checkPick game__checkHousePick">THE HOUSE PICKED</h3>
+        <img
+          class="game__checkPickImg game__checkHousePickImg"
+          src="./images/icon-paper.svg"
+          alt="scissors symbol"
+        />
+      </article>
+      <button class="game__rulesBtn">RULES</button>
+      <aside class="rulesModal rulesModal--hide">
+        <h2 class="rulesModal__title">GAME RULES</h2>
+        <p class="rulesModal__text">
+          Rules are pretty simple. If the you wins, you gain one point. If the
+          computer wins, you loses one point. For example, if you have selected
+          a stone and the computer selects scissors, you win. Below is a list of
+          all possible combinations.
+        </p>
+        <ul class="rulesModal__combinationsList">
+          <li>Scissors beats Paper</li>
+          <li>Paper beats Rock</li>
+          <li>Rock beats Lizard</li>
+          <li>Lizard beats Spock</li>
+          <li>Spock beats Scissors</li>
+          <li>Scissors beats Lizard</li>
+          <li>Paper beats Spock</li>
+          <li>Rock beats Scissors</li>
+          <li>Lizard beats Paper</li>
+          <li>Spock beats Rock</li>
+        </ul>
+        <img
+          class="rulesModal__img"
+          src="./images/image-rules-bonus.svg"
+          alt="game rules graphic"
+        />
+      </aside>
     </main>
     <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="attribution__link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
       >. Coded by
-      <a href="https://www.frontendmentor.io/profile/Kaipi01" target="_blank"
+      <a
+        class="attribution__link"
+        href="https://www.frontendmentor.io/profile/Kaipi01"
+        target="_blank"
         >Kaipi01</a
       >.
     </footer>
