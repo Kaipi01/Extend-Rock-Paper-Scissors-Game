@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+@use "./components/header";
+@use "./components/score";
+@use "./components/game";
+@use "./components/rulesModal";
+@use "./components/attribution";
+@use "./utils/variables" as var;
 
-/* Reset margin and padding */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,18 +13,9 @@
   box-sizing: border-box;
 }
 
-/* Variables */
-
-/* Body styling */
-/* Header styling */
-/* Main styling */
-
-/* Footer styling */
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
+
