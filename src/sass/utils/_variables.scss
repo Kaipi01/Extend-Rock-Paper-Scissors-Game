@@ -1,0 +1,59 @@
+$Bg-Radial-Gradient: radial-gradient(
+  circle at top,
+  hsl(214, 47%, 23%),
+  hsl(237, 49%, 15%)
+);
+
+$Light-Text: hsl(0, 0%, 100%);
+$Dark-Text: hsl(229, 25%, 31%);
+$Score-Text: hsl(229, 64%, 46%);
+
+$Light-Gray: hsl(0, 0%, 81%);
+
+$Header-Outline: hsl(217, 16%, 45%);
+
+$Transition: all 0.3s ease;
+
+// Scissors theme
+
+$Scissors-Color: hsl(39, 88%, 35%);
+$Scissors-Box-Shadow: 0px 0px 30px 8px $Scissors-Color,
+  0px 6px 0px 0px $Scissors-Color;
+$Scissors-Gradient: linear-gradient(
+  to top,
+  hsl(39, 89%, 49%),
+  hsl(40, 84%, 53%)
+);
+
+// Paper theme
+
+$Paper-Color: hsl(230, 68%, 48%);
+$Paper-Box-Shadow: 0px 0px 30px 8px $Paper-Color, 0px 6px 0px 0px $Paper-Color;
+$Paper-Gradient: linear-gradient(
+  to top,
+  hsl(230, 89%, 62%),
+  hsl(230, 89%, 65%)
+);
+
+// Rock theme
+
+$Rock-Color: hsl(349, 89%, 34%);
+$Rock-Box-Shadow: 0px 0px 30px 8px $Rock-Color, 0px 6px 0px 0px $Rock-Color;
+$Rock-Gradient: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+
+// Lizard theme
+
+$Lizard-Color: hsl(261, 65%, 50%);
+$Lizard-Box-Shadow: 0px 0px 30px 8px $Lizard-Color,
+  0px 6px 0px 0px $Lizard-Color;
+$Lizard-Gradient: linear-gradient(
+  to top,
+  hsl(261, 73%, 60%),
+  hsl(261, 72%, 63%)
+);
+
+// Spock theme
+
+$Cyan-Color: hsl(189, 87%, 31%);
+$Cyan-Box-Shadow: 0px 0px 30px 8px $Cyan-Color, 0px 6px 0px 0px $Cyan-Color;
+$Cyan-Gradient: linear-gradient(to top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
