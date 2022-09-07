@@ -23,37 +23,39 @@
       </section>
     </header>
     <main class="game">
+      <div aria-hidden="true" class="game__curtain game__curtain--hide"></div>
       <article class="game__start">
         <h2 class="game__stepTitle">CHOOSE YOUR WEAPON</h2>
-        <button class="game__startBtn">
+        <img  class="game__startBgImg" src="./images/bg-pentagon.svg" alt="">
+        <button class="game__startBtn game__startBtnScissors">
           <img
             class="game__startBtnImg"
             src="./images/icon-scissors.svg"
             alt="scissors symbol"
           />
         </button>
-        <button class="game__startBtn">
+        <button class="game__startBtn game__startBtnSpock">
           <img
             class="game__startBtnImg"
             src="./images/icon-spock.svg"
             alt="spock symbol"
           />
         </button>
-        <button class="game__startBtn">
+        <button class="game__startBtn game__startBtnLizard">
           <img
             class="game__startBtnImg"
             src="./images/icon-lizard.svg"
             alt="lizard symbol"
           />
         </button>
-        <button class="game__startBtn">
+        <button class="game__startBtn game__startBtnRock">
           <img
             class="game__startBtnImg"
             src="./images/icon-rock.svg"
             alt="rock symbol"
           />
         </button>
-        <button class="game__startBtn">
+        <button class="game__startBtn game__startBtnPaper">
           <img
             class="game__startBtnImg"
             src="./images/icon-paper.svg"
@@ -82,7 +84,15 @@
       </article>
       <button class="game__rulesBtn">RULES</button>
       <aside class="rulesModal rulesModal--hide">
-        <h2 class="rulesModal__title">GAME RULES</h2>
+        <h2 class="rulesModal__title">RULES</h2>
+        <img
+          class="rulesModal__img"
+          src="./images/image-rules-bonus.svg"
+          alt="game rules graphic"
+        />
+        <button class="rulesModal__closeBtn">
+          <img class="rulesModal__closeBtnIcon" src="./images/icon-close.svg" alt="close icon">
+        </button>
         <p class="rulesModal__text">
           Rules are pretty simple. If the you wins, you gain one point. If the
           computer wins, you loses one point. For example, if you have selected
@@ -101,11 +111,6 @@
           <li>Lizard beats Paper</li>
           <li>Spock beats Rock</li>
         </ul>
-        <img
-          class="rulesModal__img"
-          src="./images/image-rules-bonus.svg"
-          alt="game rules graphic"
-        />
       </aside>
     </main>
     <footer class="attribution">
