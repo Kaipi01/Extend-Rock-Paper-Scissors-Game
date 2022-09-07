@@ -1,0 +1,236 @@
+@use "../utils/variables" as var;
+@use "../utils/hideText" as hideText;
+
+.game {
+  &__stepTitle {
+    @extend %hideText;
+  }
+
+  &__curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.703);
+    z-index: 1;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__start {
+    position: relative;
+    transform: scale(0.6);
+    @media only screen and (min-height: 500px) {
+      transform: scale(0.7);
+    }
+    @media only screen and (min-width: 700px) and (min-height: 700px) {
+      transform: scale(1);
+    }
+
+    &--hide {
+      display: none;
+    }
+
+    &BgImg {
+      width: 350px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -5;
+    }
+
+    &Btn {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      background-color: var.$Light-Text;
+
+      // &Img {
+
+      // }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: -17.5px;
+        border-radius: 50%;
+        transition: var.$Transition;
+        width: 135px;
+        height: 135px;
+        z-index: -2;
+      }
+
+      &Scissors {
+        top: -210px;
+        left: -50px;
+
+        &::after {
+          background: var.$Scissors-Gradient;
+          -webkit-box-shadow: 0px 6px 0px 0px var.$Scissors-Color;
+          -moz-box-shadow: 0px 6px 0px 0px var.$Scissors-Color;
+          box-shadow: 0px 6px 0px 0px var.$Scissors-Color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          &::after {
+            -webkit-box-shadow: var.$Scissors-Box-Shadow;
+            -moz-box-shadow: var.$Scissors-Box-Shadow;
+            box-shadow: var.$Scissors-Box-Shadow;
+          }
+        }
+      }
+
+      &Spock {
+        top: -90px;
+        left: -210px;
+
+        &::after {
+          background: var.$Cyan-Gradient;
+          -webkit-box-shadow: 0px 6px 0px 0px var.$Cyan-Color;
+          -moz-box-shadow: 0px 6px 0px 0px var.$Cyan-Color;
+          box-shadow: 0px 6px 0px 0px var.$Cyan-Color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          &::after {
+            -webkit-box-shadow: var.$Cyan-Box-Shadow;
+            -moz-box-shadow: var.$Cyan-Box-Shadow;
+            box-shadow: var.$Cyan-Box-Shadow;
+          }
+        }
+      }
+
+      &Lizard {
+        bottom: -200px;
+        left: -150px;
+
+        &::after {
+          background: var.$Lizard-Gradient;
+          -webkit-box-shadow: 0px 6px 0px 0px var.$Lizard-Color;
+          -moz-box-shadow: 0px 6px 0px 0px var.$Lizard-Color;
+          box-shadow: 0px 6px 0px 0px var.$Lizard-Color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          &::after {
+            -webkit-box-shadow: var.$Lizard-Box-Shadow;
+            -moz-box-shadow: var.$Lizard-Box-Shadow;
+            box-shadow: var.$Lizard-Box-Shadow;
+          }
+        }
+      }
+
+      &Rock {
+        bottom: -200px;
+        right: -150px;
+
+        &::after {
+          background: var.$Rock-Gradient;
+          -webkit-box-shadow: 0px 6px 0px 0px var.$Rock-Color;
+          -moz-box-shadow: 0px 6px 0px 0px var.$Rock-Color;
+          box-shadow: 0px 6px 0px 0px var.$Rock-Color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          &::after {
+            -webkit-box-shadow: var.$Rock-Box-Shadow;
+            -moz-box-shadow: var.$Rock-Box-Shadow;
+            box-shadow: var.$Rock-Box-Shadow;
+          }
+        }
+      }
+
+      &Paper {
+        top: -90px;
+        right: -210px;
+
+        &::after {
+          background: var.$Paper-Gradient;
+          -webkit-box-shadow: 0px 6px 0px 0px var.$Paper-Color;
+          -moz-box-shadow: 0px 6px 0px 0px var.$Paper-Color;
+          box-shadow: 0px 6px 0px 0px var.$Paper-Color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          &::after {
+            -webkit-box-shadow: var.$Paper-Box-Shadow;
+            -moz-box-shadow: var.$Paper-Box-Shadow;
+            box-shadow: var.$Paper-Box-Shadow;
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: var.$Light-Gray;
+        top: -5px;
+        left: 0px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__check {
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__final {
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__rulesBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0);
+    @media only screen and (min-width: 600px) {
+      bottom: 25px;
+      right: 25px;
+      left: auto;
+      transform: translate(0, 0);
+    }
+    border: 2px solid var.$Light-Text;
+    border-radius: 8px;
+    color: var.$Light-Text;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: var.$Transition;
+
+    &:hover,
+    &:focus {
+      color: var.$Dark-Text;
+      background-color: var.$Light-Text;
+    }
+  }
+}
