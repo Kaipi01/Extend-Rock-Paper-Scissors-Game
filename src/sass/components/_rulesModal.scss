@@ -3,62 +3,67 @@
 @use "./utils/flex-mixin" as mix;
 
 .rulesModal {
-    @include mix.setFlex(column,space-around);
-    background-color: var.$Light-Text;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    @media only screen and (min-width: 700px) {
-        border-radius: 10px;
-        top: 50%;
-        left: 50%;
-        width: max-content;
-        height: max-content;
-        transform: translate(-50%, -50%);
-        padding: 30px;
-        padding-bottom: 50px;
-        z-index: 1;
-    }
+  @include mix.setFlex(column, space-around);
+  background-color: var.$Light-Text;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @media only screen and (min-width: 700px) {
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    padding-bottom: 50px;
     z-index: 1;
+  }
+  z-index: 1;
 
-    &--hide {
-        display: none
-    }
+  &--hide {
+    display: none;
+  }
 
-    &__img {
-        width: 300px;
-        @media only screen and (min-width: 700px) {
-            width: 340px;
-        }
+  &__img {
+    width: 300px;
+    @media only screen and (min-width: 700px) {
+      width: 340px;
     }
-    
-    &__title {
-        color: var.$Dark-Text;
-        text-align: center;
-        font-size: 35px;
-        font-weight: 700;
-        padding-top: 30px;
-        @media only screen and (min-width: 700px) {
-            align-self: start;
-            margin-bottom: 15px;
-            padding-top: 0;
-        }
-    }
+  }
 
-    &__closeBtn {
-        border: none;
-        background: none;
-        cursor: pointer;
-        @media only screen and (min-width: 700px) {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-        }
+  &__title {
+    color: var.$Dark-Text;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 30px;
+    @media only screen and (min-width: 700px) {
+      align-self: start;
+      margin-bottom: 15px;
+      padding-top: 0;
     }
-    
-    &__combinationsList, &__text {
-        @extend %hideText;
+  }
+
+  &__closeBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    @media only screen and (min-width: 700px) {
+      position: absolute;
+      top: 30px;
+      right: 30px;
     }
+  }
+
+  &__combinationsList,
+  &__text {
+    @extend %hideText;
+  }
 }

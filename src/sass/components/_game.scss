@@ -240,7 +240,11 @@
       left: auto;
       transform: translate(0, 0);
     }
-    
+    @media only screen and (min-width: 600px) and (min-height: 700px) {
+      bottom: 30px;
+      right: 30px;
+    }
+
     border: 2px solid var.$Light-Text;
     border-radius: 8px;
     color: var.$Light-Text;

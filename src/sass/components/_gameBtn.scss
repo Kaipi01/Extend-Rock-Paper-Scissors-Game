@@ -45,8 +45,6 @@
   &Spock {
     &::after {
       background: var.$Cyan-Gradient;
-      -webkit-box-shadow: 0px 6px 0px 0px var.$Cyan-Color;
-      -moz-box-shadow: 0px 6px 0px 0px var.$Cyan-Color;
       box-shadow: 0px 6px 0px 0px var.$Cyan-Color;
     }
 
@@ -54,8 +52,6 @@
     &:focus,
     &:active {
       &::after {
-        -webkit-box-shadow: var.$Cyan-Box-Shadow;
-        -moz-box-shadow: var.$Cyan-Box-Shadow;
         box-shadow: var.$Cyan-Box-Shadow;
         transform: scale(1.1);
       }
@@ -65,8 +61,6 @@
   &Lizard {
     &::after {
       background: var.$Lizard-Gradient;
-      -webkit-box-shadow: 0px 6px 0px 0px var.$Lizard-Color;
-      -moz-box-shadow: 0px 6px 0px 0px var.$Lizard-Color;
       box-shadow: 0px 6px 0px 0px var.$Lizard-Color;
     }
 
@@ -74,8 +68,6 @@
     &:focus,
     &:active {
       &::after {
-        -webkit-box-shadow: var.$Lizard-Box-Shadow;
-        -moz-box-shadow: var.$Lizard-Box-Shadow;
         box-shadow: var.$Lizard-Box-Shadow;
         transform: scale(1.1);
       }
@@ -85,8 +77,6 @@
   &Rock {
     &::after {
       background: var.$Rock-Gradient;
-      -webkit-box-shadow: 0px 6px 0px 0px var.$Rock-Color;
-      -moz-box-shadow: 0px 6px 0px 0px var.$Rock-Color;
       box-shadow: 0px 6px 0px 0px var.$Rock-Color;
     }
 
@@ -94,8 +84,6 @@
     &:focus,
     &:active {
       &::after {
-        -webkit-box-shadow: var.$Rock-Box-Shadow;
-        -moz-box-shadow: var.$Rock-Box-Shadow;
         box-shadow: var.$Rock-Box-Shadow;
         transform: scale(1.1);
       }
@@ -105,8 +93,6 @@
   &Paper {
     &::after {
       background: var.$Paper-Gradient;
-      -webkit-box-shadow: 0px 6px 0px 0px var.$Paper-Color;
-      -moz-box-shadow: 0px 6px 0px 0px var.$Paper-Color;
       box-shadow: 0px 6px 0px 0px var.$Paper-Color;
     }
 
@@ -114,8 +100,6 @@
     &:focus,
     &:active {
       &::after {
-        -webkit-box-shadow: var.$Paper-Box-Shadow;
-        -moz-box-shadow: var.$Paper-Box-Shadow;
         box-shadow: var.$Paper-Box-Shadow;
         transform: scale(1.1);
       }
@@ -125,8 +109,6 @@
   &Scissors {
     &::after {
       background: var.$Scissors-Gradient;
-      -webkit-box-shadow: 0px 6px 0px 0px var.$Scissors-Color;
-      -moz-box-shadow: 0px 6px 0px 0px var.$Scissors-Color;
       box-shadow: 0px 6px 0px 0px var.$Scissors-Color;
     }
 
@@ -134,8 +116,6 @@
     &:focus,
     &:active {
       &::after {
-        -webkit-box-shadow: var.$Scissors-Box-Shadow;
-        -moz-box-shadow: var.$Scissors-Box-Shadow;
         box-shadow: var.$Scissors-Box-Shadow;
         transform: scale(1.1);
       }
