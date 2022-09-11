@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kaipi01/Extend-Rock-Paper-Scissors-Game
+- Live Site URL: https://kaipi01.github.io/Extend-Rock-Paper-Scissors-Game
 
 ## My process
 
