@@ -32,7 +32,7 @@ startGameBtns.forEach((btn) =>
     const userChoice = btn.dataset.pick;
     const computerChoice = gameElements[randomNumberFrom0To4];
     const result = getResult(userChoice, computerChoice);
-    const userPickInfoImgSrc = btn.childNodes[1].childNodes[1].src;
+    const userPickInfoImgSrc = getElementGrandChild(btn).src;
     const gameBtnChosenByComputer = document.querySelector(
       `.gameBtn${computerChoice}`
     );
