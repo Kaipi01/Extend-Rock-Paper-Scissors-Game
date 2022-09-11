@@ -19,68 +19,100 @@
       <h1 class="header__title">ROCK, PAPER, SCISSORS, LIZARD, SPOCK GAME</h1>
       <section class="score">
         <h2 class="score__title">SCORE</h2>
-        <p class="score__value">12</p>
+        <p class="score__value">0</p>
       </section>
     </header>
     <main class="game">
       <div aria-hidden="true" class="game__curtain game__curtain--hide"></div>
       <article class="game__start">
         <h2 class="game__stepTitle">CHOOSE YOUR WEAPON</h2>
-        <img  class="game__startBgImg" src="./images/bg-pentagon.svg" alt="">
-        <button class="game__startBtn game__startBtnScissors">
-          <img
-            class="game__startBtnImg"
-            src="./images/icon-scissors.svg"
-            alt="scissors symbol"
-          />
+        <img
+          class="game__startBgImg"
+          src="./images/bg-pentagon.svg"
+          alt="pentagon with black border"
+        />
+        <button
+          data-pick="Scissors"
+          class="game__startBtn gameBtn gameBtnScissors"
+        >
+          <span class="gameBtn__bg">
+            <img
+              class="gameBtn__img"
+              src="./images/icon-scissors.svg"
+              alt="Scissors symbol"
+            />
+          </span>
         </button>
-        <button class="game__startBtn game__startBtnSpock">
-          <img
-            class="game__startBtnImg"
-            src="./images/icon-spock.svg"
-            alt="spock symbol"
-          />
+        <button data-pick="Spock" class="game__startBtn gameBtn gameBtnSpock">
+          <span class="gameBtn__bg">
+            <img
+              class="gameBtn__img"
+              src="./images/icon-spock.svg"
+              alt="Spock symbol"
+            />
+          </span>
         </button>
-        <button class="game__startBtn game__startBtnLizard">
-          <img
-            class="game__startBtnImg"
-            src="./images/icon-lizard.svg"
-            alt="lizard symbol"
-          />
+        <button data-pick="Lizard" class="game__startBtn gameBtn gameBtnLizard">
+          <span class="gameBtn__bg">
+            <img
+              class="gameBtn__img"
+              src="./images/icon-lizard.svg"
+              alt="Lizard symbol"
+            />
+          </span>
         </button>
-        <button class="game__startBtn game__startBtnRock">
-          <img
-            class="game__startBtnImg"
-            src="./images/icon-rock.svg"
-            alt="rock symbol"
-          />
+        <button data-pick="Rock" class="game__startBtn gameBtn gameBtnRock">
+          <span class="gameBtn__bg">
+            <img
+              class="gameBtn__img"
+              src="./images/icon-rock.svg"
+              alt="Rock symbol"
+            />
+          </span>
         </button>
-        <button class="game__startBtn game__startBtnPaper">
-          <img
-            class="game__startBtnImg"
-            src="./images/icon-paper.svg"
-            alt="paper symbol"
-          />
+        <button data-pick="Paper" class="game__startBtn gameBtn gameBtnPaper">
+          <span class="gameBtn__bg">
+            <img
+              class="gameBtn__img"
+              src="./images/icon-paper.svg"
+              alt="Paper symbol"
+            />
+          </span>
         </button>
       </article>
       <article class="game__check game__check--hide">
         <h2 class="game__stepTitle">LET'S SEE WHO WON</h2>
-        <h3 class="game__checkPick game__checkYouPick">YOU PICKED</h3>
-        <img
-          class="game__checkPickImg game__checkYouPickImg"
-          src="./images/icon-rock.svg"
-          alt="rock symbol"
-        />
+        <div class="game__checkInfo">
+          <h3 class="game__checkInfoTitle">YOU PICKED</h3>
+          <div class="game__checkInfoPick game__checkInfoUserPick gameBtn">
+            <span class="gameBtn__bg">
+              <img
+                class="game__checkInfoImg gameBtn__img"
+                src="./images/icon-scissors.svg"
+                alt="scissors symbol"
+              />
+            </span>
+          </div>
+        </div>
         <article class="game__final game__final--hide">
           <h2 class="game__finalResult">YOU LOSE</h2>
           <button class="game__finalBtn">PLAY AGAIN</button>
         </article>
-        <h3 class="game__checkPick game__checkHousePick">THE HOUSE PICKED</h3>
-        <img
-          class="game__checkPickImg game__checkHousePickImg"
-          src="./images/icon-paper.svg"
-          alt="scissors symbol"
-        />
+        <div class="game__checkInfo">
+          <h3 class="game__checkInfoTitle">THE HOUSE PICKED</h3>
+          <div aria-hidden="true" class="game__checkInfoNone"></div>
+          <div
+            class="game__checkInfoPick game__checkInfoPick--hide game__checkInfoComputerPick gameBtn gameBtnSpock"
+          >
+            <span class="gameBtn__bg">
+              <img
+                class="game__checkInfoImg gameBtn__img"
+                src="./images/icon-spock.svg"
+                alt="spock symbol"
+              />
+            </span>
+          </div>
+        </div>
       </article>
       <button class="game__rulesBtn">RULES</button>
       <aside class="rulesModal rulesModal--hide">
@@ -91,7 +123,11 @@
           alt="game rules graphic"
         />
         <button class="rulesModal__closeBtn">
-          <img class="rulesModal__closeBtnIcon" src="./images/icon-close.svg" alt="close icon">
+          <img
+            class="rulesModal__closeBtnIcon"
+            src="./images/icon-close.svg"
+            alt="close icon"
+          />
         </button>
         <p class="rulesModal__text">
           Rules are pretty simple. If the you wins, you gain one point. If the
