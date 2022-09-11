@@ -3,6 +3,7 @@
 @use "./components/game";
 @use "./components/rulesModal";
 @use "./components/attribution";
+@use "./components/gameBtn";
 @use "./utils/variables" as var;
 @use "./utils/flex-mixin" as mix;
 
@@ -21,4 +22,5 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
   height: 100vh;
+  overflow-x: hidden;
 }
