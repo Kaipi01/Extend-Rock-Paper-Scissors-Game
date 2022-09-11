@@ -130,7 +130,7 @@ function showModal() {
 }
 
 function getResult(player1, player2) {
-  let result = "REMIS";
+  let result = "DRAW";
   switch (player1) {
     case "Scissors":
       switch (player2) {
