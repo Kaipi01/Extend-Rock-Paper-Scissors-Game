@@ -1,6 +1,6 @@
 # Frontend Mentor - Extend Rock, Paper, Scissors solution
 
-Link to project site: https://kaipi01.github.io/Rest-Countries-API
+Link to project site: https://kaipi01.github.io/Extend-Rock-Paper-Scissors-Game
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
